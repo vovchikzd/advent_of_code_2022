@@ -49,9 +49,8 @@ fn main() {
                 .parse::<i32>()
                 .unwrap(),
         );
-        if numbers[0] <= numbers[2] && numbers[1] >= numbers[3] {
-            counter += 1;
-        } else if numbers[2] <= numbers[0] && numbers[3] >= numbers[1] {
+
+        if numbers[2] <= numbers[1] && numbers[3] >= numbers[0] {
             counter += 1;
         }
     }
