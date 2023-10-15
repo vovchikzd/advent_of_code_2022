@@ -21,7 +21,8 @@ fn main() {
                 rhs.push(to_push);
             }
         }
-        lhs.sort(); rhs.sort();
+        lhs.sort();
+        rhs.sort();
         search_same(&mut lhs, &mut rhs, &mut priority);
     }
     println!("{}", priority);
